@@ -3,6 +3,7 @@
 namespace Traits\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Traits\Providers\Generators\TraitCommand;
 
 class TraitProvider extends ServiceProvider
 {
@@ -13,7 +14,7 @@ class TraitProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands(TraitCommand::class);
     }
 
     /**
@@ -23,8 +24,6 @@ class TraitProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(!file_exists(base_path('app/console/commands').'/TraitCommand.php')){
-            $this->publishes([__DIR__.'/tools' => base_path('app/console/commands')]);
-        }
+        //
     }
 }

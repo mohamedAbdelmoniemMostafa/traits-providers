@@ -16,7 +16,6 @@ Traits\Providers\TraitProvider::class
 
 ```
 
-now please run this command on you composer terminal  ` php artisan vendor:publish `
 
 ##usage
 
