@@ -1,6 +1,6 @@
 <?php
 
-namespace  App\Console\Commands;
+namespace  Traits\Providers\Generators;
 
 use Illuminate\Console\GeneratorCommand;
 
